@@ -7,6 +7,7 @@
     <title>Responsive</title>
     <script type="module" src="https://cdn.jsdelivr.net/npm/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://cdn.jsdelivr.net/npm/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
     <link rel="stylesheet" href="./style.css" />
 </head>
@@ -29,13 +30,23 @@
             <a href="#">Sign In</a>
             <button class="btn--sign">Start free trial</button>
         </nav>
-        <button class="hamburger">
-            <div></div>
-            <div></div>
-            <div></div>
-        </button>
+        <div class="btn-menu--item" onclick="showMenu()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
     </header>
     <!-- nav bar -->
+
+
+    <!-- menu item -->
+    <div class="menu--item" id="menu--item">
+        <a href="#">Products</a>
+        <a href="#">Features</a>
+        <a href="#">Pricing</a>
+        <a href="#">Support</a>
+        <a href="#">Sign In</a>
+        <button class="btn--sign">Start free trial</button>
+    </div>
+    <!-- menu item -->
 
 
     <!-- main--content -->
@@ -115,7 +126,7 @@
     </main>
     <!-- main--content -->
 
-    
+
     <!-- footer -->
     <footer>
         <div class="footer--left">
@@ -141,6 +152,7 @@
         </div>
     </footer>
     <!-- footer -->
+    <script src="./main.js"></script>
 </body>
 
 </html>
